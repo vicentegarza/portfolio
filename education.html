@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">  
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="wrapper">
+
+  <nav class="navbar">
+    <div id="navtxt-left">Vicente J. Garza</div>
+    <div id="navtxt-right">
+
+      <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle navbar-toggler" data-bs-toggle="dropdown">
+          <span>☰</span>
+        </button>
+
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="index.html">Home</a></li>
+          <li><a class="dropdown-item" href="education.html">Education</a></li>
+          <li><a class="dropdown-item" href="interests.html">Interests</a></li>
+          <li><a class="dropdown-item" href="hobbies.html">Hobbies</a></li>
+          <li><a class="dropdown-item" href="places.html">Places</a></li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <div>
+      <h1>EDUCATION</h1>
+      <ul class="intro-txt">
+        <li>High School Diploma from 
+          <span class="univ-txt" onclick="chgDescrip('udem')">Universidad de Monterrey (UDEM)</span><br>
+            Monterrey, Nuevo Leon, Mexico. 1980</li>
+        <li>High School Diploma from 
+          <span class="univ-txt" onclick="chgDescrip('hhs')">Henryville High School</span><br>
+          Henryville, Indiana, USA. 1981</li>
+        <li>B.S. Chemical and Systems Engineering from 
+          <span class="univ-txt" onclick="chgDescrip('tec')">Tec de Monterrey</span><br>
+            Monterrey, Nuevo Leon, Mexico. 1985</li>
+        <li>M.Sc. Chemical Engineering from 
+          <span class="univ-txt"  onclick="chgDescrip('ucd')">University of California, Davis</span><br>
+            Davis, California, USA. 1988</li>
+        <li>Ph.D. Environmental Engineering from 
+          <span class="univ-txt" onclick="chgDescrip('ucd')">University of California, Davis</span><br>
+            Davis, California, USA. 1993</li>
+      </ul>
+      <p class="click-info"><strong>Click</strong> on the <strong>school name</strong> to change picture and description</p>
+    </div>
+
+    <div class="descrip-section">
+      <div class="descrip-bar">
+        <div>
+          <img id="descrip-img" src="images/cerro_dela_silla_1.jpg" alt="City of Monterrey">
+          <p class="link-txt" id="descrip-ttl">MONTERREY</p>
+        </div>
+        
+        <p class="descrip-txt" id="descrip-txt">This is a partial view of the city of
+          Monterrey, Mexico showing what is probably its main landmark: El Cerro de la
+          Silla (Saddle Mountain).  Monterrey is the 3rd largest city in Mexico with a
+          population of the metropolitan area of approximately 5 million.
+        </p>
+        
+      </div>
+    </div>
+  </main>
+ 
+  <footer class="footer">
+    <div class="footer-text"><i class="fa-regular fa-copyright"></i> Vicente J. Garza</div>
+    <div class="footer-icons">
+      <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+  
+</body>
+</html>
